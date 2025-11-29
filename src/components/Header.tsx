@@ -29,6 +29,10 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
             ))}
           </div>
           <div className="flex items-center gap-4">
+            <a href="mailto:info@cyberlogistics.ru" className="hidden xl:flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+              <Icon name="Mail" size={18} className="text-secondary" />
+              <span className="font-medium">info@cyberlogistics.ru</span>
+            </a>
             <a href="tel:+78005553535" className="hidden lg:flex items-center gap-2 text-foreground hover:text-primary transition-colors">
               <Icon name="Phone" size={18} className="text-primary" />
               <span className="font-medium">+7 (800) 555-35-35</span>
