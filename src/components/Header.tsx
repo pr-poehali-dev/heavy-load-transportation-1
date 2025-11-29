@@ -28,10 +28,16 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
               </button>
             ))}
           </div>
-          <Button className="bg-primary hover:bg-primary/80 neon-border">
-            <Icon name="Phone" size={18} className="mr-2" />
-            Связаться
-          </Button>
+          <div className="flex items-center gap-4">
+            <a href="tel:+78005553535" className="hidden lg:flex items-center gap-2 text-foreground hover:text-primary transition-colors">
+              <Icon name="Phone" size={18} className="text-primary" />
+              <span className="font-medium">+7 (800) 555-35-35</span>
+            </a>
+            <Button className="bg-primary hover:bg-primary/80 neon-border">
+              <Icon name="Phone" size={18} className="mr-2" />
+              Связаться
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
